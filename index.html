@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Glückspiel</title>
+</head>
+<body>
+   <header>
+        <h1>Casino</h1>
+        <div class="royale">
+            <p>R</p>
+            <p>O</p>
+            <p>Y</p>
+            <p>A</p>
+            <p>L</p>
+            <p>E</p>
+        </div>
+    </header>
+    
+    <main>
+
+      <section>
+          <!-- Kontostand  -->
+        <p  id="konto"></p>
+
+        <button class="buttonOne" onclick="run()">Wetten!</button>
+       <!-- Wurfeln -->
+        <div>
+            <i id="randomNumber"  class="fa-solid fa-dice-one wurfel1"></i>
+            <i id="randomNumber"  class="fa-solid fa-dice-one wurfel2"></i>
+            <i id="randomNumber"  class="fa-solid fa-dice-one wurfel3"></i>
+        </div>
+        <!-- Reset -->
+         <button onclick="revert()" id="reset">Reset!</button>
+    
+      </section>   
+
+    </main>
+    <script src="https://kit.fontawesome.com/b256d7bf92.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Cinzel', Arial, Helvetica, sans-serif;
+}
+/* Header and H1 */
+header {
+    max-width: 100%;
+    background-color: #161417;
+    padding-bottom: 10px;
+    border-bottom: #eec44f solid 1px;
+}
+header h1 {
+    text-align: center;
+    color: #eec44fc5;  
+    padding: 20px;
+    font-size: 40px;
+}
+/* Royal */
+.royale {
+    display: flex;
+   justify-content: center;
+}
+
+.royale p {
+    color: grey;
+    letter-spacing: 2px;
+    animation: light 1.5s ease-out infinite;
+    font-size: 4rem;
+}
+.royale p:nth-child(1) {
+     animation-delay:0.2s;
+}
+
+.royale p:nth-child(2) {
+    animation-delay:0.3s;
+}
+
+
+div p:nth-child(3) {
+    animation-delay:0.4s;
+}
+
+
+.royale p:nth-child(4) {
+    animation-delay:0.5s;
+}
+
+
+.royale p:nth-child(5) {
+    animation-delay:0.6s;
+}
+
+.royale p:nth-child(6) {
+    animation-delay:0.7s;
+}
+
+
+.royale p:nth-child(7) {
+    animation-delay:0.8s;
+}
+
+
+.royale p:nth-child(8) {
+    animation-delay:0.9s;
+}
+
+@keyframes light {
+    0% {
+        color: #eec44f;
+        text-shadow: rgb(250, 128, 28) 1px 0px 5px;
+    }
+    70% {
+        color: rgba(234, 204, 147, 0.534);
+        text-shadow: none;
+    }
+    100% {
+        color: rgba(234, 204, 147, 0.521);
+        text-shadow: none;
+    }
+}
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height:100vh;
+    background: url(https://t3.ftcdn.net/jpg/04/12/13/64/360_F_412136472_7NPswsupclbhIi0NJXsk3OG2xEznEmqC.jpg) no-repeat center;
+    background-size: cover;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10rem;
+    text-align: center;
+    margin-bottom: 6rem;
+    height: 500px;
+    width: 500px;
+
+}
+h2{
+    font-size: 3rem;
+    text-align: center;
+    color: #e2c576b9;  
+    padding: 20px;
+    font-size: 40px;
+    letter-spacing: 7px;
+}
+section p {
+    font-size: 4rem;
+    color: rgb(234, 203, 147);
+    text-shadow: rgb(180, 142, 38) 6px 4px 10px;
+    padding: 30px;
+  
+} 
+/*Wetten Button  */
+.buttonOne {
+    line-height: 50px;
+    font-size: 1.7rem;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #9b7611;
+    transition:0.3s;
+    background-color: #ccbc90;
+    animation: glow 1s infinite ;
+    transition:0.5s; 
+}
+
+@keyframes glow{
+    0%{
+    box-shadow: 5px 5px 20px rgb(180, 142, 38),-5px -5px 20px rgb(180, 142, 38);}
+    
+    50%{
+    box-shadow: 5px 5px 20px rgb(234, 203, 147),-5px -5px 20px rgb(234, 203, 147)
+    }
+    100%{
+    box-shadow: 5px 5px 20px rgb(180, 142, 38),-5px -5px 20px rgb(180, 142, 38)
+    }
+}
+ 
+#randomNumber {
+    font-size: 100px;
+    color: #eec44fd0;
+    text-shadow: #b48e26 6px 4px 10px;
+    padding: 5px;
+    
+    /*Reset Button  */
+}#reset {
+    margin: 5% 30%;
+    background-color: rgba(0, 0, 0, 0.288);
+    border: none;
+    border-radius: 10px;
+    color: #9b7611;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 1023px) {
+    section {
+        margin: 10%;
+        width: 300px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #d6c79f49;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .buttonOne {
+        width: 200px;            
+    }
+
+    #randomNumber {
+        font-size: 70px;
+    }
+    section p {
+        color: rgb(218, 204, 180);
+        text-shadow: #3d2e0f 6px 4px 10px;
+   }
+   #reset {
+       width: 100px ;
+   }
+}
+
